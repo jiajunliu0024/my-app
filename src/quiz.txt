@@ -1,0 +1,43 @@
+1. why do we need to "import React from "react""？
+React is what defines JSX
+
+2. console.log(jsx)？
+A javascript object
+
+3. What's wrong with this code:
+```
+const page = (
+    <h1>Hello</h1>
+    <p>This is my website!</p>
+)
+```
+need a single parent element to wrap alll
+
+4. diff between declarative and  imperative?
+declarative: tell the computer what to do
+imperative: tell the computer how to do
+
+5.What does it mean for something to be "composable"?
+put something togerther to make something larger/greater than individual pieces.
+
+6.In JSX, lower-case tag names are considered to be HTML tags.
+ However, lower-case tag names with a dot (property accessor) aren't.
+
+ ```
+function myComponent() {
+    return (
+        <small>I'm tiny text!</small>
+    )
+}
+```
+myComponent should be MyComponent
+
+
+7. What is react componet?
+A function that returns React componet
+
+8.
+Use
+ReactDOM.render(<Header />, document.getElementById("root"))
+instead of 
+ReactDOM.render(Header(), document.getElementById("root"))
