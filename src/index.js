@@ -17,31 +17,6 @@ import Header from "./Header"
 //   document.getElementById('root')
 // );
 
-
-function ReturnFun(){
-  return(
-    <div>
-      <header>
-        <nav>
-          <img src={process.env.PUBLIC_URL + '/logo192.png'} />
-
-        </nav>
-      </header>
-      <h1> Reason i am ecited yp learner</h1>
-      <ul>
-          <li>Menu</li>
-          <li>About</li>
-          <li>Contact</li>
-      </ul>
-      <footer>
-          <small>
-          © 2021 J development. All rights reserved.
-          </small>
-      </footer>
-    </div>
-
-  )
-}
 /**
 Mini Challenge:
 Move the `header` element from Page into 
@@ -51,20 +26,27 @@ its own component called "Header"
 
 function MainContent(){
   return(
-    <body className='main'>
-      <div className='main-page-word'>
-        <ol className='main-page-content'>
-          <li>Welcome to Jackson Blog</li>
-          <li>Leave your message for me by enter the details</li>
-        </ol>
-      </div>
-      <div className="main-page-img">
-        <img className="main-profile-img"  src={process.env.PUBLIC_URL + '/programmer.svg'}></img>
+    <body className = 'main-page-body'>
+      <div className='main'>
+        <div className='main-page-word'>
+          <div className='main-page-content'>
+            <p className = "main-page-content-firstchild">Welcome to Jackson Blog</p>
+            <p className = "main-page-content-secondchild">On this blog I share tips and tricks, frameworks, projects, tutorials, etc
+  Make sure you subscribe to get the latest updates</p>
+          </div>
+        <div className = "main-box">
+            <form id="main-form"> 
+                <input className = "main-enter-box"  placeholder="Talk to author..."></input>
+                <button className ="main-enter-button" >Enter</button>
+            </form>
+          </div>
+        </div>
+        <div className="main-page-img">
+          <img className="main-profile-img"  src={process.env.PUBLIC_URL + '/Vector.svg'}></img>
+        </div>
       </div>
       
-
     </body>
-    
   )
 }
 
