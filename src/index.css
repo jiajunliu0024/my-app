@@ -51,8 +51,16 @@ code {
   
   padding: 100px;
 
+
 }
 
+.main-page-img{
+  width: 50%;
+}
+.main-profile-img{
+  width: 100%;
+  height: max-content;
+}
 .nav-items > button{
   font-family: Plus Jakarta Sans;
   font-size: 20px;
@@ -66,6 +74,14 @@ code {
 
 
 }
+
+.main > div {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+}
+
+
 .nav > p{
   padding-left: 10px;
 }

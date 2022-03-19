@@ -52,12 +52,16 @@ its own component called "Header"
 function MainContent(){
   return(
     <body className='main'>
+      <div className='main-page-word'>
+        <ol className='main-page-content'>
+          <li>Welcome to Jackson Blog</li>
+          <li>Leave your message for me by enter the details</li>
+        </ol>
+      </div>
+      <div className="main-page-img">
+        <img className="main-profile-img"  src={process.env.PUBLIC_URL + '/programmer.svg'}></img>
+      </div>
       
-      <ol className='main-page-content'>
-      <li> dfasdsadfsda</li>
-      <li>Hi,There</li>
-      </ol>
-      <img className="profile-img" align = "right" src={process.env.PUBLIC_URL + '/programmer.svg'}></img>
 
     </body>
     
