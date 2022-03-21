@@ -1,4 +1,7 @@
 
+.card:hover{
+    background: #f0f1f4;
+}
 
 .card {
     
@@ -12,6 +15,7 @@
     background-color: white;
     border-radius: 8px;
     
+
 
 }
 

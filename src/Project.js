@@ -1,11 +1,13 @@
 
 
 function ProejctContent(){
+    
+  
     return(
         
         <body className="project-page">
            
-            <div className = "card">
+            <div className = "card" >
                 <div className="card-design">
                     <p>React Project - Animation auto</p>
                     <div className = "card-presonal-info">
