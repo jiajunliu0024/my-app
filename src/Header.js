@@ -3,6 +3,21 @@ import React  from "react"
 
 
 export default function Header(){
+    function handleOnclick(e) {
+      e.preventDefault();
+
+      
+      
+    }
+    function MouseOver(event) {
+      event.target.style.background = "#6246EA" ;
+      
+    }
+    function MouseOut(event){
+      event.target.style.background="";
+    }
+
+
     return(
       <div>
         
@@ -16,10 +31,18 @@ export default function Header(){
         
          
         <ul className='nav-items'>
-           <li>Blog</li>
-           <li>Introduce</li>
-           <li>Github</li>
-           <li className="contact-btn">Email Me</li>
+           <li>
+            <button onMouseOver={MouseOver} onMouseOut={MouseOut}>Home</button>
+           </li>
+           <li>
+            <button onClick={() => console.log('work work')}>Project</button>
+           </li>
+           <li>
+            <button onClick={() => console.log('work work')}>Contact</button>
+           </li>
+           <li >
+            <button onClick={() => console.log('work work')}>Email Me</button>
+           </li>
         </ul>
          
         </nav>        

@@ -4,8 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Header from "./Header"
+import Footer from './Footer';
+import ProejctContent from './Project';
 
-
+import './project.css'
 
 // document.getElementById("root").append(JSON.stringify(navbar))
 //ReactDOM.render(navbar, document.getElementById("root"))
@@ -50,19 +52,32 @@ function MainContent(){
   )
 }
 
-function Page() {
+function Home() {
   return (
       <div>
         <Header />
         <MainContent/>
+        <Footer/>
       </div>
   )
 }
 
+function Project(){
+  return(
+    <div>
+      <Header/>
+      <ProejctContent/>
+      <Footer/>
+
+    </div>
+  )
+}
+
+
 //ReactDOM.render( <ReturnFun/> ,document.getElementById("root"))
 
 //ReactDOM.render(<Page />, document.getElementById("root"))
-ReactDOM.render(<Page />, document.getElementById("root"))
+ReactDOM.render(<Home />, document.getElementById("root"))
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

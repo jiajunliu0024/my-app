@@ -1,0 +1,54 @@
+
+
+.card {
+    
+    padding: 10px;
+    height: 200px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    margin-top: 10px;
+    align-content: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background-color: white;
+    border-radius: 8px;
+    
+
+}
+
+.card-design{
+    height: 100%;
+    float: left;
+}
+.card-personal-info{
+    display: flex;
+    height: 100%;
+}
+
+.card-personal-img{
+    
+    height: 20px;
+    margin-top: 80px;
+    border-radius: 50%;
+    
+}
+p{
+  font-family: Plus Jakarta Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+.card-img{
+    
+    height: 100%;
+    float: right;
+
+}
+.project-page {
+   
+    padding-top: 80px;
+
+}
