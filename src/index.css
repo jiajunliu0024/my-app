@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   
   
@@ -9,11 +9,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
-}
+} */
 * {
     box-sizing: border-box;
 }
-
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #f0f1f4;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -76,11 +80,11 @@ code {
   background: none;
   border-radius: 8px;
 }
-.main-page-body{
-  height: 800px;
+/* .main-page-body{
+  height: 200%;
   width: 100%;
   background: #f0f1f4;
-}
+} */
 
 .main-page-content{
   
@@ -233,3 +237,7 @@ code {
   
 }
 
+.footer-block{
+  position: absolute;
+  bottom: 0;
+}
