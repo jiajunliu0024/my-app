@@ -1,6 +1,6 @@
-
-
-function ProejctContent(){
+import Header from "./Header";
+import Footer from "./Footer";
+function ProjectContent(){
     
   
     return(
@@ -53,4 +53,14 @@ function ProejctContent(){
 
 
 }
-export default ProejctContent;
+function Project(){
+    return(
+      <div>
+        
+        <ProjectContent/>
+        <Footer/>
+  
+      </div>
+    )
+  }
+export default Project;

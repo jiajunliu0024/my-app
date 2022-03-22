@@ -1,7 +1,8 @@
 
 import React  from "react"
 
-
+import { Link } from 'react-router-dom';
+import "./index.css";
 export default function Header(){
     function handleOnclick(e) {
       e.preventDefault();
@@ -21,31 +22,38 @@ export default function Header(){
     return(
       <div>
         
-        <nav className='nav'>
+        <div className='nav'>
        
-        <ul className='blogger-name'>
-                <li className="author">Jackson </li>
-                <li className="blog">.Blog</li>
-        </ul>
-        
+          <ul className='blogger-name'>
+                  <li className="author">Jackson </li>
+                  <li className="blog">.Blog</li>
+          </ul>
+          <div className = "nav-items">
+            <li>
+              <Link to='/home' className = "nav-item" >
+                  Home
+              </Link>
+            </li>
+            
+            <li>
+              <Link to='/project' className = "nav-item" >
+                  Project
+              </Link>
+            </li>
+            <li>
+              <Link to='/contact' className = "nav-item" >
+                  Contact Me
+              </Link>
+            </li>
+          </div>
         
          
-        <ul className='nav-items'>
-           <li>
-            <button onMouseOver={MouseOver} onMouseOut={MouseOut}>Home</button>
-           </li>
-           <li>
-            <button onClick={() => console.log('work work')}>Project</button>
-           </li>
-           <li>
-            <button onClick={() => console.log('work work')}>Contact</button>
-           </li>
-           <li >
-            <button onClick={() => console.log('work work')}>Email Me</button>
-           </li>
-        </ul>
+        
+          
+           
+       
          
-        </nav>        
+        </div>        
       </div>
       
     )

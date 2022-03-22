@@ -43,9 +43,8 @@ code {
   list-style: none;
   display: flex;
 }
-
-.nav-items > li > button {
-  
+.nav-item{
+  list-style: none;
   font-family: Plus Jakarta Sans;
   font-size: 20px;
   font-style: normal;
@@ -53,7 +52,25 @@ code {
   line-height: 25px;
   letter-spacing: 0em;
   text-align: left;
+  text-decoration: none;
+  padding: 10px;
+  border: none;
+  background: none;
+  border-radius: 8px;
+  
+}
 
+
+.nav > li   {
+  list-style: none;
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  
   padding: 10px;
   border: none;
   background: none;
