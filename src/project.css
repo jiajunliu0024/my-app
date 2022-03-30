@@ -1,7 +1,11 @@
 
+@import '~antd/dist/antd.css';
+
 .card:hover{
     background: #f0f1f4;
 }
+
+
 
 .card {
     
@@ -17,6 +21,16 @@
     
 
 
+}
+.project-card:hover{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.project-card{
+    height: 200px;
+    width:200px;
+    margin: 20px;
+    
+    
 }
 
 .card-design{
@@ -52,7 +66,18 @@ p{
 
 }
 .project-page {
-   
-    padding-top: 80px;
+    display: flex;
+    
 
+}
+.project-container-card{
+    display: flex;
+    height: 200px;
+    
+    margin:10px;
+    
+}
+.project-card-content{
+    margin-left: 25%;
+   
 }
