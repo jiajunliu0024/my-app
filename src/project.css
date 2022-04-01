@@ -27,7 +27,7 @@
 }
 .project-card{
     height: 200px;
-    width:200px;
+    width: 200px;
     margin: 20px;
     
     
@@ -66,14 +66,19 @@ p{
 
 }
 .project-page {
+    
     display: flex;
+    flex-wrap: wrap;
+    
     
 
 }
 .project-container-card{
-    
+    border: 3px solid black;
+    max-width: 1000px;
+    max-height: 1500px;
     box-sizing: border-box;
-    display: flex;
+    display: flex-wrap;
     
     
     margin:10px;

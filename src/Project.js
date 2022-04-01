@@ -61,7 +61,7 @@ class ProjectContent extends React.Component{
         while(count--)
            uiItems.push(
             
-            <Card className = "project-card"  title="Small size card" extra={<a href="#">More</a>} style={{ width: 300 }}>
+            <Card className = "project-card"  title="Small size card">
                 <p>Card content</p>
                 <p>Card content</p>
                 <p>Card content</p>
@@ -78,9 +78,9 @@ class ProjectContent extends React.Component{
                 <div>
                     <button className="btn-anchor-style add-row-link" value={"9"}  type="button" onClick={e => this.handleAddingDivs(e, "value")} >{'2'}</button>
                 </div>
-                <div className = "project-container-card" >
-                    {this.renderDivs()}
-                </div>
+                
+                {this.renderDivs()}
+                
             
         
         </body>
