@@ -54,11 +54,11 @@ function MainContent(){
 
 export default function Home() {
   return (
-      <div>
+      
         
-        <MainContent/>
-        <Footer/>
-      </div>
+      <MainContent/>
+       
+      
   )
 }
 

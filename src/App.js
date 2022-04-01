@@ -10,6 +10,7 @@ import './project.css';
 import Home from "./Home.js"
 import Project from './Project.js';
 import Header from './Header.js';
+import Footer from './Footer';
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/project" element={<Project />} />
       </Routes >
+      <Footer/>
     </Router>
    
   )
